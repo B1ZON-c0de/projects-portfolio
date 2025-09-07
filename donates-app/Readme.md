@@ -48,4 +48,33 @@
 - **Адаптивный дизайн** - Mobile-first подход
 
 ## 📁 Структура проекта
+src/
+├── components/ # Компоненты приложения
+│ ├── App.js # Корневой компонент
+│ ├── Form.js # Форма ввода донатов
+│ ├── List.js # Список донатов
+│ └── ListItem.js # Элемент списка
+├── core/
+│ └── Component.js # Базовый класс компонента
+├── utils/
+│ └── toNumber.js # Вспомогательные функции
+├── index.css # Глобальные стили
+├── index.html # HTML шаблон
+└── index.js # Точка входа
+
+
+## 🚀 Быстрый старт
+
+1. **Клонируйте репозиторий**
+```bash
+git clone https://github.com/your-username/donation-tracker.git
+```
+2.**Установите зависимости**
+```bash
+pnpm install
+```
+3.**Запустите development сервер**
+```bash
+npm start
+```
 
