@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body
+    class="h-screen bg-linear-65 from-purple-500 to-pink-500 flex items-center justify-center"
+  >
+
+    <div
+      class="glass w-full h-screen md:w-fit md:h-135 md:rounded-2xl p-3 flex flex-col justify-between"
+    >
+      <div class="flex items-center justify-center mt-2 md:mt-0">
+        <h1 class="badge badge-accent badge-xl">Calculator</h1>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col md:items-end">
+          <input
+            type="text"
+            id="prevExam"
+            placeholder="5+5"
+            class="bg-transparent text-3xl md:text-2xl text-right md:w-60 text-accent/65 placeholder:italic"
+            value=""
+            disabled
+          />
+          <input
+            type="text"
+            id="exam"
+            placeholder="10"
+            class="bg-transparent text-6xl md:text-5xl font-semibold text-right md:w-60 text-accent overflow-hidden placeholder:italic"
+            value=""
+            disabled
+          />
+        </div>
+        <div class="flex justify-end my-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            id="delLastChar"
+            class="btn btn-md md:btn-sm btn-link p-0"
+          >
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M576 128c0-35.3-28.7-64-64-64L205.3 64c-17 0-33.3 6.7-45.3 18.7L9.4 233.4c-6 6-9.4 14.1-9.4 22.6s3.4 16.6 9.4 22.6L160 429.3c12 12 28.3 18.7 45.3 18.7L512 448c35.3 0 64-28.7 64-64l0-256zM271 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+            />
+          </svg>
+        </div>
+        <div class="grid grid-cols-4 grid-rows-5 gap-2">
+          <button
+            id="clearBtn"
+            class="btn btn-secondary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            AC
+          </button>
+          <button
+            class="btn btn-input btn-primary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            **
+          </button>
+          <button
+            class="btn-input btn btn-primary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            %
+          </button>
+          <button
+            class="btn-input btn btn-primary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            /
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            7
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            8
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            9
+          </button>
+          <button
+            class="btn-input btn btn-primary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            *
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            4
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            5
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            6
+          </button>
+          <button
+            class="btn-input btn btn-primary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            -
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            1
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            2
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            3
+          </button>
+          <button
+            class="btn-input btn btn-primary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            +
+          </button>
+          <button
+            id="negOrPos"
+            class="btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            +/-
+          </button>
+          <button
+            class="btn btn-input btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            0
+          </button>
+          <button
+            class="btn-input btn btn-soft btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            .
+          </button>
+          <button
+            id="equal"
+            class="btn btn-secondary btn-xl md:text-2xl md:btn-square shadow-xl w-full h-16"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
