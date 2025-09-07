@@ -1,0 +1,183 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f1f5f8;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.title {
+  text-align: center;
+}
+
+.todo-app__main {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #6574cd;
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-list {
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-list__item:last-child {
+  border-bottom: none;
+}
+
+.todo-list__item-text {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.todo-list__item--completed .todo-list__item-text {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: #6574cd;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn--delete {
+  background-color: transparent;
+}
+
+.btn--delete:hover path {
+  fill: #e3342f;
+}
+
+.btn--check {
+  background-color: transparent;
+}
+
+.btn--check path {
+  fill: black;
+}
+
+.todo-list__item--completed .btn--check path,
+.btn--check:hover path {
+  fill: #38c172;
+}
+
+.todo-list__empty {
+  text-align: center;
+  color: #999;
+}
+
+.todo-app__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+.todo-app__footer-text {
+  flex-grow: 1;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f1f5f8;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.title {
+  text-align: center;
+}
+
+.btn {
+  background-color: #6574cd;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.btn--delete {
+  background-color: transparent;
+}
+
+.btn--delete:hover path {
+  fill: #e3342f;
+}
+
+.btn--check {
+  background-color: transparent;
+}
+
+.btn--check path {
+  fill: black;
+}
+
+.btn--check:hover path {
+  fill: #38c172;
+}
+
+.todo-list__empty {
+  text-align: center;
+  color: #999;
+}
+
+.form {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.form__group {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #6574cd;
+}
+
+.btn--add-todo {
+  border-radius: 0 5px 5px 0;
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+}
