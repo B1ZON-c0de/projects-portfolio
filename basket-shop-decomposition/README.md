@@ -58,7 +58,7 @@ src/
 ## 🚀 Быстрый старт
 **Клонируйте репозиторий**
 ```bash
-git clone https://github.com/your-username/vue-shopping-cart.git
+git clone https://github.com/B1ZON-c0de/projects-portfolio/tree/main/basket-shop-decomposition
 ```
 **Установите зависимости**
 ```bash
