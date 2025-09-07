@@ -1,22 +1,24 @@
 import Background from './components/Background';
 import { FieldContainer, InformationContainer } from './components/';
 import { useEffect, useState } from 'react';
+
 function App() {
-  const [currentPlayer, setCurrentPLayer] = useState<'X' | 'O'>('X');
+  const [currentPlayer, setCurrentPlayer] = useState<'X' | 'O'>('X');
   const [isGameEnded, setIsGameEnded] = useState(false);
   const [isDraw, setIsDraw] = useState(false);
   const [field, setField] = useState(['', '', '', '', '', '', '', '', '']);
   const [isReset, setIsReset] = useState(false);
 
   useEffect(() => {
-    if (isGameEnded && !field.includes('')) {
+    if (!field.includes('') && !isGameEnded) {
       setIsDraw(true);
+      setIsGameEnded(true);
     }
-  }, [isGameEnded]);
+  }, [field, isGameEnded]);
 
   const setFieldArr = (arr: string[], nextMark: 'X' | 'O') => {
     setField(arr);
-    setCurrentPLayer(nextMark);
+    setCurrentPlayer(nextMark);
   };
 
   const setIsEnd = (isDraw: boolean, isEnd: boolean) => {
@@ -25,7 +27,7 @@ function App() {
   };
 
   const resetGame = () => {
-    setCurrentPLayer('X');
+    setCurrentPlayer('X');
     setIsGameEnded(false);
     setIsDraw(false);
     setField(['', '', '', '', '', '', '', '', '']);
