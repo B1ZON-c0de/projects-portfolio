@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+# 🔐 Cosmic Registration Form | Форма регистрации с валидацией
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современная и элегантная форма регистрации с расширенной валидацией, разработанная на React с TypeScript. Проект демонстрирует лучшие практики работы с формами, валидацией и созданием immersive UI с космическим дизайном.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Возможности
 
-## Expanding the ESLint configuration
+- **📧 Валидация email** Проверка корректности формата email
+- **🔐 Валидация пароля** Минимальная длина 6 символов
+- **🔄 Подтверждение пароля** Сравнение паролей на совпадение
+- **👁️ Видимость пароля** Переключение видимости пароля
+- **🎯 Валидация в реальном времени** Instant feedback при вводе
+- **🚫 Блокировка кнопки** Кнопка неактивна при невалидной форме
+- **🌌 Космический дизайн** Immersive background с градиентами
+- **📱 Адаптивный интерфейс** Оптимальное отображение на всех устройствах
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎥 Демонстрация работы
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<!-- ВСТАВЬТЕ ВАШУ GIF-АНИМАЦИЮ ЗДЕСЬ -->
+![Демонстрация работы формы регистрации](./form.gif)
+<!-- ЗАМЕНИТЕ ВЫШЕСТОЯЩУЮ ССЫЛКУ НА ВАШУ REAL GIF -->
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+> *На GIF показано: процесс заполнения формы, валидация полей, переключение видимости пароля, работа с ошибками*
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Технологический стек
+
+### Frontend Framework
+- **React 18** - Современная версия с Strict Mode
+- **TypeScript** - Полная типизация для надежности
+- **React Hook Form** - Эффективное управление формами
+- **Yup** - Схемы валидации
+
+### Стилизация & UI
+- **Tailwind CSS** - Утилитарный CSS фреймворк
+- **DaisyUI** - Компонентная библиотека (тема Synthwave)
+- **Lucide React** - Современные иконки
+- **Custom CSS** - Кастомные стили и анимации
+
+### Валидация
+- **Yup Schema Validation** - Декларативные схемы валидации
+- **React Hook Form Resolvers** - Интеграция валидации с формами
+- **Real-time Validation** - Валидация при onChange
+
+### Инструменты разработки
+- **Vite** - Быстрый сборщик проекта
+- **ESLint** - Линтинг кода
+- **TypeScript ESLint** - Линтинг TypeScript
+
+## 📁 Структура проекта
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+src/
+├── components/
+│ ├── PasswordInput/
+│ │ └── PasswordInput.tsx # Компонент поля пароля
+│ └── Background.tsx # Космический background
+├── schema/
+│ └── schema.ts # Yup схемы валидации
+├── types/
+│ └── type.ts # TypeScript интерфейсы
+├── App.tsx # Основной компонент
+├── index.css # Глобальные стили
+└── main.tsx # Точка входа
 ```
