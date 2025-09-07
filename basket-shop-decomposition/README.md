@@ -59,11 +59,11 @@ src/
 ```bash
 git clone https://github.com/your-username/vue-shopping-cart.git
 ```
-2.**Установка зависимостей**
+**Установите зависимости**
 ```bash
 pnpm install 
 ```
-3.**Запуск  development сервера**
+**Запустите  development сервер**
 ```bash
 pnpm run dev
 ```
