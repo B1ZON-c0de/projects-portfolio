@@ -53,18 +53,3 @@ src/
 ├── main.ts # Точка входа приложения  
 └── style.css # Глобальные стили
 ```
-
-
-## 🚀 Быстрый старт
-**Клонируйте репозиторий**
-```bash
-git clone https://github.com/B1ZON-c0de/projects-portfolio/tree/main/basket-shop-decomposition
-```
-**Установите зависимости**
-```bash
-pnpm install 
-```
-**Запустите  development сервер**
-```bash
-pnpm run dev
-```
