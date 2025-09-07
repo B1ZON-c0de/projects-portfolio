@@ -56,6 +56,7 @@ src/
 
 
 ## 🚀 Быстрый старт
+**Клонируйте репозиторий**
 ```bash
 git clone https://github.com/your-username/vue-shopping-cart.git
 ```
